@@ -10,3 +10,6 @@ __pycache__/
 # Ignore cache directories (e.g., Ruff, mypy)
 .ruff_cache/
 .mypy_cache/
+
+# not including model and vocab since too big
+model/
