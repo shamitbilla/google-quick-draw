@@ -1,0 +1,6 @@
+fastapi
+onnxruntime
+Pillow
+numpy
+uvicorn[standard]
+websockets

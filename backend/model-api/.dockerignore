@@ -1,0 +1,21 @@
+# Ignore Python bytecode files
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environments
+.venv/
+
+# Ignore cache directories (e.g., Ruff, mypy)
+.ruff_cache/
+.mypy_cache/
+
+# Ignore compiled requirements files
+requirements.in
+
+# dummy client python file
+ws-client.py
+
+
+
