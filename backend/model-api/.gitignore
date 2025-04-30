@@ -13,3 +13,6 @@ __pycache__/
 
 # not including model and vocab since too big
 model/
+
+# environment variables
+.env*

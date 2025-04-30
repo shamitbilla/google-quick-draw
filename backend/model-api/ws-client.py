@@ -3,8 +3,14 @@ from PIL import Image
 import asyncio
 import websockets
 import time
+import os
+from dotenv import load_dotenv
 
-image_path = r"C:\Users\shami\Tech\projects\quick-draw-proto\_98.png"
+load_dotenv()
+
+image_path = os.getenv("IMG_PATH")
+uri = os.getenv("LOCAL_URL")
+
 img_png = Image.open(image_path)
 
 img_png = img_png.convert("RGB")
@@ -35,5 +41,4 @@ async def send_data(uri, message):
 
 
 if __name__ == "__main__":
-    uri = "wss://quickdraw-model-api.onrender.com/ws"  # Replace with your WebSocket server URI
     asyncio.run(send_data(uri, jpeg_bytes))
