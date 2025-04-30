@@ -2,3 +2,7 @@
 testing_stuff/
 # data
 data/
+
+.env
+*.env
+**/.env
