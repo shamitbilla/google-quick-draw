@@ -11,8 +11,11 @@ export default function Home() {
     <>
       <div className="flex flex-col items-center py-16">
         <Image src={"/images/logo.png"} height={500} width={500} alt="hie" className="max-w-2/3 h-auto"/>
-        <div className="text-2xl handwriting mb-4 md:text-4xl">
-          Can a neural network learn to recognize doodling?
+        
+        <div className="text-center">
+          <div className="text-2xl handwriting mb-4 md:text-4xl">
+            Can a neural network learn to recognize doodling?
+          </div>
         </div>
         <div className="text-xl handwriting">
           Inspired by Google, made by Shamit.
