@@ -22,7 +22,7 @@ export default function Home() {
         </div>
 
         <div className="py-16">
-          <button type="button" className="text-white handwriting bg-yellow-400 hover:bg-yellow-500 font-medium rounded-lg text-2xl px-11 py-2.5" onClick={()=>{router.push("/game");}}>Let&rsquo;s Draw</button>
+          <button type="button" className="border border-black text-white handwriting bg-yellow-400 hover:bg-yellow-500 font-medium rounded-lg text-2xl px-11 py-2.5" onClick={()=>{router.push("/game");}}>Let&rsquo;s Draw</button>
         </div>
       </div>
     </>
