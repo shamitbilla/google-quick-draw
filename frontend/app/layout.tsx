@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Patrick_Hand } from "next/font/google";
 import "./globals.css";
-import { ViewTransitions } from "next-view-transitions"; // ← correct import name
 
 const patrickHand = Patrick_Hand({
   variable: "--font-patrick-hand",
@@ -33,9 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} ${patrickHand.variable} antialiased`}>
-        <ViewTransitions>
           {children}
-        </ViewTransitions>
       </body>
     </html>
   );
